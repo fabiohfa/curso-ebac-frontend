@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    
+}
+/*Coloquei o footer nesta opção para pegar a fonte no footer*/
+body, input, textarea,footer{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed; /* Torna o cabeçalho fixo no topo */
+    top: 0; /* Fixa o cabeçalho no topo da página */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+    z-index: 1000; /* Garante que o cabeçalho fique acima do conteúdo */
+}
+
+header nav li{
+    display:  inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+/*coloquei esse código abaixo como novo parar gerar um "atualizar" na tela principal*/
+header h1 a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width:  1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+html {
+    scroll-padding-top: 70px; /* Ajuste conforme a altura do seu cabeçalho fixo */
+}
+body {
+    padding-top: 70px; /* Ajuste este valor de acordo com a altura do seu cabeçalho */
+}
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section {
+    padding: 12px 0;
+    height: calc(100vh - 70px - 26px); /* 100vh = altura total da tela, subtraímos a altura do cabeçalho e do rodapé */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo ultrapassar a altura disponível */
+    background-color: #f4f4f4; /* Exemplo de cor de fundo */
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section{
+    color: #182C61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front{
+    margin-right: 32px;
+    height: 450px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: flex;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #314e9c;
+    color: #b9bfc0; /*Coloquei essa cor para brincar*/
+}
+
+input:focus, textarea:focus {
+    outline-color:#182C61;
+}
+
+footer {
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 4px 0;
+    position: fixed; /* Fixando o footer na tela */
+    bottom: 0; /* Colocando o footer na parte inferior da tela */
+    width: 100%; /* Garantindo que ele ocupe toda a largura da tela */
+    left: 0; /* Alinha o footer à esquerda */
+    z-index: 1000; /* Garante que o footer ficará acima de outros conteúdos */
+}
+section:last-child {
+    padding-bottom: 60px; /* Espaço para o footer fixo */
+}
+
+/* Estilos adicionais para a página e o layout */
+body {
+    margin-bottom: 60px; /* Espaço para o footer fixo */
+}
+
+/* Cor de fundo azul claro para a seção Entreterimento */
+#Entre {
+    background-color: #add8e6; /* Azul claro */
+}
+#Entre h2 {
+    color: #52516e; /* Azul escuro para o título */
+}
+#Entre p {
+    color: #042550; /* Cinza escuro para o texto dos parágrafos */
+}
+
+/* Cor de fundo azul um pouco mais claro para a seção Tecnologia */
+#Tecno {
+    background-color:  #6686c0; /* Azul um pouco mais claro */
+
+}
+#Tecno h2 {
+    color: #add8e6; /* Azul escuro para o título */
+}
+#Tecno p {
+    color: #000000; /* Cinza escuro para o texto dos parágrafos */
+}
+
