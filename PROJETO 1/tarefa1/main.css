@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #761121;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+header .container a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav li
+{
+    display: inline;
+}
+
+#blog{
+
+}
+
+#blog img{
+    width: 250px;
+}
