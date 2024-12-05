@@ -13,10 +13,10 @@ h1{
     margin-bottom: 20px;
 }
 
-p{
+p .formulario{
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .button-enviar{
@@ -38,20 +38,13 @@ p{
 }
 
 .b-menor{
-    font-size: 12px;
+    font-size: 16px;
     background-color: red;
     color: #fff;
     width: 300px;
-    margin: 15px auto;
-    display: none;
-}
+    margin: -8px auto 8px auto;
+    display: grid;
 
-.indicador::after{
-    content: "\261C";
-    color: black;
-    margin-right: 20px;
-    padding-left: 10px;
-    display: none;
 }
 
 input .error{
